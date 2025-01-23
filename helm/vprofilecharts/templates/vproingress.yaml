@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: awsdevops.xyz
+  - host: vprofile.awsdevops.xyz
     http:
       paths:
       - path: /
