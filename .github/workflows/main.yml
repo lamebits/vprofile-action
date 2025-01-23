@@ -87,7 +87,7 @@ jobs:
         run: cat ~/.kube/config
           
       - name: Login to ECR
-        run: kubectl create secret docker-registry regcred --docker-server=${{ secret.REGISTORY }} --docker-username=AWS --docker-password=${aws ecr get-login-password}
+        run: kubectl create secret docker-registry regcred --docker-server=${{ secrets.REGISTORY }} --docker-username=AWS --docker-password=${aws ecr get-login-password}
 
       - name: Helm Configure & Deploy
         uses: ccapell/action-deploy-eks-helm@v1.0.3
