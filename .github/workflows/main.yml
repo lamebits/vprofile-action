@@ -39,7 +39,7 @@ jobs:
           -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
 
       - name: SonarQube quality Gate Check
-        id:  SonarQube Quality Gate check
+        id:  sonarqube-quality-gate-check
         uses: sonarsource/sonarqube-quality-gate-action@master
         timeout-minutes: 5
         env: 
